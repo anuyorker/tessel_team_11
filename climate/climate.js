@@ -10,7 +10,6 @@ of temperature and humidity to the console.
 
 var tessel = require('tessel');
 var climatelib = require('climate-si7020');
-
 var climate = climatelib.use(tessel.port['A']);
 
 climate.on('ready', function() {
@@ -37,3 +36,5 @@ climate.on('ready', function() {
 climate.on('error', function(err) {
   console.log('error connecting module', err);
 });
+
+module.exports = climate;

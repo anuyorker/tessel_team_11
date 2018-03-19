@@ -1,5 +1,4 @@
 'use strict';
-const tessel = require('tessel');
 
 // Any copyright is dedicated to the Public Domain.
 // http://creativecommons.org/publicdomain/zero/1.0/
@@ -22,6 +21,4 @@ http
   })
   .listen(port, () => console.log(`http://${os.hostname()}.local:${port}`));
 
-module.exports = {
-  camera
-}
+module.exports = camera;
